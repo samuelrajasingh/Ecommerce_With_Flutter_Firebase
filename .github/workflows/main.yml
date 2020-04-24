@@ -17,9 +17,8 @@ jobs:
     # Include the flutter action
     - uses: subosito/flutter-action@v1
       with:
-        channel: 'stable'  
+        channel: 'dev'
     # Get flutter packages
-    - run: flutter doctor -v
     - run: flutter pub get
     # Build :D 
     - run: flutter build aot
