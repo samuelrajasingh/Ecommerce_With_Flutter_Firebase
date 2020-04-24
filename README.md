@@ -4,10 +4,10 @@ A sample Flutter project to show case user login and signup process with Firebas
 It also shows how to perform CRUD operations with Firebase Real Time Database using simple Products list application.
 
 # Preview of Android
-![add To DB](./preview/addToDB.png)
-![empty List](./preview/empty.png)
-![list](./preview/list.png)
-![add with Keyboard](./preview/addWithKeyboard.png)
+![add To DB](./preview/addToDB.png =250x250)
+![empty List](./preview/empty.png =250x250)
+![list](./preview/list.png =250x250)
+![add with Keyboard](./preview/addWithKeyboard.png =250x250)
 
 You can build yourself a ios app with the source code provided
 
