@@ -173,68 +173,70 @@ class _ProductPageState extends State<ProductPage> {
                   _nameController.clear();
                   _priceController.clear();
                   _quantityController.clear();
-                  return AlertDialog(
-                    content: new Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        new Padding(
-                            padding: EdgeInsets.fromLTRB(44, 10, 44, 10),
-                            child: new TextField(
-                              controller: _nameController,
-                              autofocus: true,
-                              decoration: new InputDecoration(
-                                labelText: 'Enter Product Name',
-                              ),
-                            )),
-                        new Padding(
+                  return SingleChildScrollView(
+                                      child: AlertDialog(
+                      content: new Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          new Padding(
+                              padding: EdgeInsets.fromLTRB(44, 10, 44, 10),
+                              child: new TextField(
+                                controller: _nameController,
+                                autofocus: true,
+                                decoration: new InputDecoration(
+                                  labelText: 'Enter Product Name',
+                                ),
+                              )),
+                          new Padding(
+                              padding: EdgeInsets.fromLTRB(44, 10, 44, 10),
+                              child: TextField(
+                                controller: _priceController,
+                                keyboardType: TextInputType.number,
+                                inputFormatters: [
+                                  WhitelistingTextInputFormatter.digitsOnly
+                                ],
+                                decoration: new InputDecoration(
+                                  labelText: 'Enter Product price',
+                                ),
+                              )),
+                          new Padding(
                             padding: EdgeInsets.fromLTRB(44, 10, 44, 10),
                             child: TextField(
-                              controller: _priceController,
+                              controller: _quantityController,
                               keyboardType: TextInputType.number,
                               inputFormatters: [
                                 WhitelistingTextInputFormatter.digitsOnly
                               ],
                               decoration: new InputDecoration(
-                                labelText: 'Enter Product price',
+                                labelText: 'Enter quantity',
                               ),
-                            )),
-                        new Padding(
-                          padding: EdgeInsets.fromLTRB(44, 10, 44, 10),
-                          child: TextField(
-                            controller: _quantityController,
-                            keyboardType: TextInputType.number,
-                            inputFormatters: [
-                              WhitelistingTextInputFormatter.digitsOnly
-                            ],
-                            decoration: new InputDecoration(
-                              labelText: 'Enter quantity',
                             ),
                           ),
-                        ),
+                        ],
+                      ),
+                      actions: <Widget>[
+                        // new FlatButton(
+                        //     child: const Text('Cancel'),
+                        //     onPressed: () {
+                        //      // Navigator.pop(context);
+                        //           debugPrint('cancel Build Context  --- >    $context');
+                        //     }),
+                        Padding(
+                          padding:  EdgeInsets.fromLTRB(32, 0, 24, 8),
+                          child: new RaisedButton(
+                              color: Colors.blue,
+                              child: const Text('Save'),
+                              onPressed: () {
+                                addNewProduct(
+                                    _nameController.text.toString(),
+                                    int.parse(_priceController.text.toString()),
+                                    int.parse(_quantityController.text.toString()));
+                                    debugPrint('save Build Context  --- >    $context /n Save success /n'  );
+                                //Navigator.pop(context);
+                              }),
+                        )
                       ],
                     ),
-                    actions: <Widget>[
-                      // new FlatButton(
-                      //     child: const Text('Cancel'),
-                      //     onPressed: () {
-                      //      // Navigator.pop(context);
-                      //           debugPrint('cancel Build Context  --- >    $context');
-                      //     }),
-                      Padding(
-                        padding:  EdgeInsets.fromLTRB(32, 0, 24, 8),
-                        child: new RaisedButton(
-                            color: Colors.blue,
-                            child: const Text('Save'),
-                            onPressed: () {
-                              addNewProduct(
-                                  _nameController.text.toString(),
-                                  int.parse(_priceController.text.toString()),
-                                  int.parse(_quantityController.text.toString()));
-                                  debugPrint('save Build Context  --- >    $context /n Save success /n'  );
-                              //Navigator.pop(context);
-                            }),
-                      )
-                    ],
                   );
                 }),
               ]),
