@@ -20,6 +20,7 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '1.9.1+hotfix.6'
+          flutter-version: 'v1.12.13+hotfix.9'
+      - run: fluttter doctor -v
       - run: flutter pub get
-      - run: flutter build apk
+      - run: flutter build aot
