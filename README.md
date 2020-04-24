@@ -8,8 +8,8 @@ It also shows how to perform CRUD operations with Firebase Real Time Database us
 ![empty List](./preview/empty.png)
 ![list](./preview/list.png)
 ![add with Keyboard](./preview/addWithKeyboard.png)
-# Macos and Web on the way
-Brewing.....
+
+You can build yourself a ios app with the source code provided
 
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
