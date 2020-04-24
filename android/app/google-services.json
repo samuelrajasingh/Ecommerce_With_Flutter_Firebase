@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "281521303243",
+    "firebase_url": "https://hamburger-e0b4e.firebaseio.com",
+    "project_id": "hamburger-e0b4e",
+    "storage_bucket": "hamburger-e0b4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281521303243:android:075df5cdf0f4e8aa00b54e",
+        "android_client_info": {
+          "package_name": "com.example.flutterlogindemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281521303243-5053b5v7odbo804t5ef7dv2471u9ne3r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutterlogindemo",
+            "certificate_hash": "af1cc4f0b397cbcfe69bd2f581991479230d259e"
+          }
+        },
+        {
+          "client_id": "281521303243-kov4oukv70e28ol4r3duumudmmdfff0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2jQC1XVzwXp0IN5lwq6KYQKa88rwSq9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281521303243-kov4oukv70e28ol4r3duumudmmdfff0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
