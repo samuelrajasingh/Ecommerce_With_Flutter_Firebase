@@ -5,10 +5,10 @@ It also shows how to perform CRUD operations with Firebase Real Time Database us
 
 # Preview in Android
 <p align="center">
-  <img src="./preview/addToDB.png" width="256" height="455">
-  <img src="./preview/empty.png" width="256" height="455">
-  <img src="./preview/addWithKeyboard.png" width="256" height="455">
-  <img src="./preview/list.png" width="256" height="455">
+  <img src="./preview/addToDB.png" width="250" height="455">
+  <img src="./preview/empty.png" width="250" height="455"><br>
+  <img src="./preview/addWithKeyboard.png" width="250" height="455">
+  <img src="./preview/list.png" width="250" height="455">
 </p>!
 
 You can build yourself a ios app with the source code provided
